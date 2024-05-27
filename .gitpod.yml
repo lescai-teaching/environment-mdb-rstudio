@@ -17,5 +17,5 @@ ports:
 
 tasks:
   - init: |
-      sudo rstudio-server start
+      sudo useradd rstudio && sudo passwd rstudio && sudo rstudio-server start
   - command: sleep 5000
