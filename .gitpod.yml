@@ -16,5 +16,13 @@ ports:
     onOpen: open-browser
 
 tasks:
-## somestuff
-  - command: sudo rstudio-server start
+image: astrabert/bigdata-rstudio-rocker:latest
+
+ports:
+  - name: rstudio
+    port: 8787
+    onOpen: open-browser
+
+tasks:
+  - init: |
+      sudo rstudio-server start
