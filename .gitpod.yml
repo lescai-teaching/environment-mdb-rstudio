@@ -16,7 +16,5 @@ ports:
     onOpen: open-browser
 
 tasks:
-  - init: |
-      useradd rstudio
-  - command: passwd rstudio
+## somestuff
   - command: sudo rstudio-server start
