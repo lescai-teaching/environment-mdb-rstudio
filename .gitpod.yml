@@ -8,3 +8,4 @@ ports:
 tasks:
   - init: |
       sudo rstudio-server start
+  - command: sleep 5000
