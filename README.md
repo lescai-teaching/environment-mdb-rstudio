@@ -12,3 +12,5 @@ Now you're all set and can use the following button to launch the service:
 
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/lescai-teaching/environment-mdb-rstudio)
+
+The user and password for RStudio on gitpod is: username = rstudio password = rstudio
