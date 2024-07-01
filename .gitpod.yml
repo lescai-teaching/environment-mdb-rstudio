@@ -1,21 +1,21 @@
-tasks:
-  - init: |
-      docker run -d -p 8888:8888 astrabert/bigdata-rstudio-rocker:latest
-  - command: sleep 5000
-
-# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
-ports:
-  - port: 8888
-    onOpen: open-browser
-
-# image: astrabert/bigdata-rstudio-rocker:latest
-
-# ports:
-#   - name: rstudio
-#     port: 8787
-#     onOpen: open-browser
-
 # tasks:
 #   - init: |
-#       sudo rstudio-server start
+#       docker run -d -p 8888:8888 astrabert/bigdata-rstudio-rocker:latest
 #   - command: sleep 5000
+
+# # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+# ports:
+#   - port: 8888
+#     onOpen: open-browser
+
+image: astrabert/bigdata-rstudio-rocker:latest
+
+ports:
+  - name: rstudio
+    port: 8787
+    onOpen: open-browser
+
+tasks:
+  - init: |
+      sudo rstudio-server start
+  - command: sleep 5000
