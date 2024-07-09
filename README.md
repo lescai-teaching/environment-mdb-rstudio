@@ -18,7 +18,7 @@ Click the ![#05ab0b](https://placehold.co/15x15/05ab0b/05ab0b.png) `<> Code` but
 
 Once the space has been created, to make it work properly you should:
 
-1. Shut it down
+1. Close the browser window
 2. Go back to the repository page
 3. Click the ![#05ab0b](https://placehold.co/15x15/05ab0b/05ab0b.png) `<> Code` button on the top right, selecting `Codespaces`
 4. Select the space you have just created, click on `...` and then on `Open in JupyterLab`
