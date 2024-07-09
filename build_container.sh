@@ -1,0 +1,12 @@
+docker buildx build \
+--label org.opencontainers.image.title=bigdata-rstudio-gitpod \
+--label org.opencontainers.image.description='container MDB Bigdata Analyses optimised for gitpod' \
+--label org.opencontainers.image.url=https://github.com/lescai-teaching/bigdata-rstudio-gitpod \
+--label org.opencontainers.image.source=https://github.com/lescai-teaching/bigdata-rstudio-gitpod \
+--label org.opencontainers.image.version=1.0.0 \
+--label org.opencontainers.image.created=2023-01-13T12:39:11.393Z \
+--label org.opencontainers.image.licenses=MIT \
+--platform linux/amd64 \
+--tag ghcr.io/lescai-teaching/bigdata-rstudio-gitpod:1.0.0 \
+--tag ghcr.io/lescai-teaching/bigdata-rstudio-gitpod:latest \
+--push .
