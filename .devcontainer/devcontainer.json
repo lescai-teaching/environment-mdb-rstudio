@@ -26,5 +26,5 @@
 			]
 		}
 	},
-	"postStartCommand": "postStartCommand": "bash -c 'R_PATH=\"PATH=$PATH\"; echo $R_PATH >> /home/rstudio/.Renviron; for var in CODESPACE_NAME CODESPACES GITHUB_TOKEN GITHUB_USER GITHUB_SERVER_URL; do val=$(printenv $var); [ -n \"$val\" ] && echo \"$var=$val\" >> /home/rstudio/.Renviron; done'"
+	"postStartCommand": "bash -c 'R_PATH=\"PATH=$PATH\"; echo $R_PATH >> /home/rstudio/.Renviron; for var in CODESPACE_NAME CODESPACES GITHUB_TOKEN GITHUB_USER GITHUB_SERVER_URL; do val=$(printenv $var); [ -n \"$val\" ] && echo \"$var=$val\" >> /home/rstudio/.Renviron; done'"
 }
