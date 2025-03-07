@@ -1,12 +1,8 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.238.0/containers/jupyter-datascience-notebooks
 {
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": { "COPY_CONTEXT": "." }
-	},
-	"overrideCommand": false,
-	
+	"name": "bigdata-rstudio-jupyter",
+	"image": "ghcr.io/lescai-teaching/bigdata-rstudio-gitpod:latest",
 	// Forward Jupyter port locally, mark required
 	"forwardPorts": [8888],
 	"portsAttributes": {
@@ -29,5 +25,6 @@
 				"ms-python.python"
 			]
 		}
-	}
+	},
+	"postStartCommand": "bash -c 'R_PATH=\"PATH=$PATH\"; echo $R_PATH >> /home/rstudio/.Renviron; for var in CODESPACE_NAME CODESPACES GITHUB_TOKEN GITHUB_USER GITHUB_SERVER_URL; do val=$(printenv $var); [ -n \"$val\" ] && echo \"$var=$val\" >> /home/rstudio/.Renviron; done'"
 }
